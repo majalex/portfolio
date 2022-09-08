@@ -1,7 +1,7 @@
 import './index.scss';
 import { Link, NavLink } from 'react-router-dom';
-import LogoS from '../../assets/images/logo-s.png';
-import LogoSubtitle from '../../assets/images/logo_sub.png'
+import LogoTitle from '../../assets/images/logo-a.svg'
+import LogoSubtitle from '../../assets/images/Aleksander.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
@@ -9,7 +9,7 @@ import { faGithub, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-ic
 const Sidebar = () => (
     <div className='nav-bar'>
         <Link className='logo' to='/'>
-            <img src={LogoS} alt="logo" />
+            <img src={LogoTitle} alt="logo" />
             <img className="sub-logo" src={LogoSubtitle} alt="Alex" />
         </Link>
         <nav>
@@ -35,7 +35,7 @@ const Sidebar = () => (
                 </a>
             </li>
             <li>
-                <a target="_blank" rel='noreferrer' href='https://www.youtube.com/'>
+                <a target="_blank" rel='noreferrer' href='https://pl.linkedin.com/'>
                     <FontAwesomeIcon icon={faYoutube} color="#4d4d4e" />
                 </a>
             </li>
