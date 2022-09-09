@@ -5,13 +5,14 @@ import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 
 const Home = () => {
+    
     const [letterClass, setLetterClass] = useState('text-animate')
     const nameArray = ['l', 'e', 'k', 's', 'a', 'n', 'd', 'e', 'r']
     const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.']
 
     useEffect(() => {
-        return setTimeout(() => {
-            setLetterClass('text-animate-hover')
+        setTimeout(() => {
+            return setLetterClass('text-animate-hover')
         }, 4000)
     }, [])
 
@@ -25,7 +26,7 @@ const Home = () => {
                     <span className={`${letterClass} _13`}>I</span>
                     <span className={`${letterClass} _14`}>'m</span>
                     <img src={LogoTitle} alt="developer" />
-                    <AnimatedLetters letterClass={letterClass} strArray={nameArray} index={15} />
+                    <AnimatedLetters letterClass={letterClass} strArray={nameArray} index={28} />
                     <br />
                     <AnimatedLetters letterClass={letterClass} strArray={jobArray} index={22} />
                 </h1>
