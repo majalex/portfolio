@@ -27,34 +27,15 @@ const Home = () => {
                     <span className={`${letterClass} _13`}>I</span>
                     <span className={`${letterClass} _14`}>'m</span>
                     <img src={LogoTitle} alt="developer" />
-                    <span className={`${letterClass} _15`}>l</span>
-                    <span className={`${letterClass} _16`}>e</span>
-                    <span className={`${letterClass} _17`}>k</span>
-                    <span className={`${letterClass} _18`}>s</span>
-                    <span className={`${letterClass} _19`}>a</span>
-                    <span className={`${letterClass} _20`}>n</span>
-                    <span className={`${letterClass} _21`}>d</span>
-                    <span className={`${letterClass} _22`}>e</span>
-                    <span className={`${letterClass} _23`}>r</span>
-                    <br/>
-                    <span className={`${letterClass} _24`}>w</span>
-                    <span className={`${letterClass} _25`}>e</span>
-                    <span className={`${letterClass} _26`}>b</span>
-                    <span className={`${letterClass} _27`}> </span>
-                    <span className={`${letterClass} _28`}>d</span>
-                    <span className={`${letterClass} _29`}>e</span>
-                    <span className={`${letterClass} _30`}>v</span>
-                    <span className={`${letterClass} _31`}>e</span>
-                    <span className={`${letterClass} _32`}>l</span>
-                    <span className={`${letterClass} _33`}>o</span>
-                    <span className={`${letterClass} _34`}>p</span>
-                    <span className={`${letterClass} _35`}>e</span>
-                    <span className={`${letterClass} _36`}>r</span>
-                    <span className={`${letterClass} _37`}>.</span>
-
-                    {/* <AnimatedLetters letterClass={letterClass} strArray={nameArray} index={28} />
+                    <AnimatedLetters 
+                    letterClass={letterClass} 
+                    strArray={nameArray} 
+                    idx={15} />
                     <br />
-                    <AnimatedLetters letterClass={letterClass} strArray={jobArray} index={22} /> */}
+                    <AnimatedLetters 
+                    letterClass={letterClass} 
+                    strArray={jobArray} 
+                    idx={22} />
                 </h1>
                 <h2>Junior Frontend Developer / Java Script / ReactJS</h2>
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
