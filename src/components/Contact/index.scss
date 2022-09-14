@@ -1,129 +1,210 @@
 .contact-form {
-    width: 100%;
-    margin-top: 20px;
-  
-    ul {
+  width: 100%;
+  margin-top: 20px;
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
       padding: 0;
       margin: 0;
-  
-      li {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        margin-bottom: 10px;
-        opacity: 0;
-        overflow: hidden;
-        display: block;
-        clear: both;
-        position: relative;
-        animation: fadeInUp 2s 2s;
-        animation-fill-mode: forwards;
-      }
-  
-      li.half {
-        width: 49%;
-        margin-left: 2%;
-        float: left;
-        clear: none;
-  
-        &:first-child {
-          margin-left: 0;
-        }
-      }
+      list-style: none;
+      margin-bottom: 10px;
+      opacity: 0;
+      overflow: hidden;
+      display: block;
+      clear: both;
+      position: relative;
+      animation: fadeInUp 2s 2s;
+      animation-fill-mode: forwards;
     }
-  
-    input[type='text'],
-    input[type='email'] {
-      width: 100%;
-      border: 0;
-      background: #115173;
-      height: 50px;
-      font-size: 16px;
-      color: #fff;
-      padding: 0 20px;
-      box-sizing: border-box;
-    }
-  
-    textarea {
-      width: 100%;
-      border: 0;
-      background: #115173;
-      height: 50px;
-      font-size: 16px;
-      color: #fff;
-      padding: 20px;
-      box-sizing: border-box;
-      min-height: 150px;
-    }
-  
-    .flat-button {
-      color: #ffd700;
-      font-size: 11px;
-      letter-spacing: 3px;
-      text-decoration: none;
-      padding: 8px 10px;
-      border: 1px solid #ffd700;
+
+    li.half {
+      width: 49%;
+      margin-left: 2%;
       float: left;
-      border-radius: 4px;
-      background: 0 0;
-      text-transform: uppercase;
-      float: right;
-      text-align: center;
-      margin-right: 10px;
+      clear: none;
+
+      &:first-child {
+        margin-left: 0;
+      }
     }
   }
-  
-  .map-wrap {
-    background: rgba(8, 253, 216, 0.1);
-    float: right;
-    width: 53%;
-    height: 115%;
-    margin-top: -3%;
+
+  input[type='text'],
+  input[type='email'] {
+    width: 100%;
+    border: 0;
+    background: #115173;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
-  
-  .leaflet-container {
-    position: relative;
+
+  textarea {
+    width: 100%;
+    border: 0;
+    background: #115173;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 150px;
+  }
+
+  .flat-button {
+    color: #fff;
+    background-color: #022c43;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid #fff;
+    margin-top: 25px;
+    float: right;
+
+    &:hover {
+      background: #fff;
+      color: #333;
+    }
+  }
+}
+
+.map-wrap {
+  background: rgba(8, 253, 216, 0.1);
+  float: right;
+  width: 53%;
+  height: 115%;
+  margin-top: -3%;
+}
+
+.leaflet-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: backInRight 1s 1.2s;
+  animation-fill-mode: forwards;
+}
+
+.info-map {
+  position: absolute;
+  background: #000;
+  top: 50px;
+  right: 30%;
+  z-index: 999999;
+  width: 267px;
+  padding: 20px;
+  color: #fff;
+  font-family: 'Helvetica';
+  font-size: 17px;
+  font-weight: 300;
+  opacity: 0;
+  animation: fadeIn 1s 1.5s;
+  animation-fill-mode: forwards;
+
+  span {
+    font-size: 16px;
+
+    span {
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+  .tags {
+    display: none;
+  }
+
+  .contact-page .text-zone {
+    width: 80%;
+    position: static;
+    left: 0;
+    top: 0;
+    transform: translateY(0%);
+    display: block;
+  }
+
+  .info-map {
+    display: none;
+  }
+
+  .map-wrap {
     width: 100%;
     height: 100%;
-    opacity: 0;
-    animation: backInRight 1s 1.2s;
-    animation-fill-mode: forwards;
+    margin-top: 0;
   }
-  
-  .info-map {
-    position: absolute;
-    background: #000;
-    top: 50px;
-    right: 30%;
-    z-index: 999999;
-    width: 267px;
-    padding: 20px;
-    color: #fff;
-    font-family: 'Helvetica';
-    font-size: 17px;
-    font-weight: 300;
-    opacity: 0;
-    animation: fadeIn 1s 1.5s;
-    animation-fill-mode: forwards;
-  
-    span {
-      font-size: 16px;
-  
-      span {
-        color: #ffd700;
+
+  .text-zone {
+    h1 {
+      text-align: center;
+      margin-top: 18px;
+      margin-bottom: 18px;
+      margin-left: 100px;
+
+      &:before {
+        display: none;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+
+    p {
+      display: none;
+    }
+
+    .contact-form {
+      margin-top: 0;
+
+      ul {
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        margin-left: 30%;
+
+        li {
+          width: 100%;
+          margin-left: 0;
+          margin-bottom: 3px;
+        }
+
+        .flat-button {
+          margin-top: 0;
+          margin-bottom: 15px;
+          float: none;
+          width: 100%;
+          font-size: 10px;
+          letter-spacing: 5px;
+          padding: 5px 9px;
+        }
+      }
+
+      input[type='text'],
+      input[type='email'] {
+
+        height: 30px;
+        font-size: 12px;
+        padding: 0 10px;
+
+      }
+
+      textarea {
+        min-height: 0;
+        height: 60px;
+        font-size: 12px;
+        color: #fff;
+        padding: 10px;
       }
     }
   }
-  
-  @media screen and (max-width: 1200px) {
-    .map-wrap {
-      float: none;
-      margin: 0;
-      width: 100%;
-      height: 400px;
-    }
-    
-    .info-map {
-      display: none;
-    }
-  }
+}

@@ -10,7 +10,7 @@
 }
 
 .tags {
-    color: #ffd700;
+    color: #fff;
     opacity: 0.6;
     position: absolute;
     bottom: 0;
@@ -39,6 +39,7 @@
 }
 
 .about-page,
+.portfolio-page,
 .contact-page {
     .text-zone {
         position: absolute;
@@ -54,7 +55,7 @@
     h1 {
         font-size: 53px;
         font-family: 'Coolvetica';
-        color: #ffd700;
+        color: #fff;
         font-weight: 400;
         margin-top: 0;
         position: relative;
@@ -64,7 +65,7 @@
         &:before {
             content: '<h1>';
             font-family: 'La Belle Aurore', cursive;
-            color: #ffd700;
+            color: #fff;
             font-size: 18px;
             position: absolute;
             margin-top: -10px;
@@ -76,7 +77,7 @@
         &:after {
             content: '<h1/>';
             font-family: 'La Belle Aurore', cursive;
-            color: #ffd700;
+            color: #fff;
             font-size: 18px;
             line-height: 18px;
             position: absolute;
