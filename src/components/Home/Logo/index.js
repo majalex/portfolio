@@ -3,7 +3,7 @@ import gsap from 'gsap-trial'
 import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
 import './index.scss'
 import SVGComponent from './Outline/Outline'
-import LogoA from '../../../assets/images/logo-a.svg'
+import LogoA from '../../../assets/images/logo-solid-A.svg'
 
 
 const Logo = () => {
@@ -22,7 +22,7 @@ const Logo = () => {
       })
       .from(outlineLogoRef.current, {
         drawSVG: "5% 5%",
-        duration: 5,
+        duration: 10,
       })
 
     gsap.fromTo(
@@ -32,8 +32,8 @@ const Logo = () => {
       },
       {
         opacity: 1,
-        delay: 4,
-        duration: 6,
+        delay: 7,
+        duration: 8,
       }
     )
   }, [])
