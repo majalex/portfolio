@@ -79,3 +79,49 @@
         }
     }
 }
+
+@media screen and (max-width: 1200px) {
+
+    .home-page {
+        .text-zone {
+            position: initial;
+            width: 100%;
+            transform: none;
+            padding: 30px 20px;
+            box-sizing: border-box;
+            text-align: center;
+
+            h1 {
+                font-size: 45px;
+            }
+
+            .flat-button {
+                float: none;
+                display: block;
+                margin: 20px auto 0 auto;
+                width: 125px;
+    
+            }
+        }
+
+        .logo-container {
+            position: relative;
+            width: 150px;
+            height: auto;
+            top: 400px;
+            right: 0;
+            box-sizing: border-box;
+            margin: auto;
+            left: 0;
+
+            svg {
+                position: absolute;
+                top: auto;
+                right: auto;
+                bottom: auto;
+                left: 0;
+                margin: auto;
+            }
+        }
+    }
+}

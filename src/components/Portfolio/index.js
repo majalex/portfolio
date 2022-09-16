@@ -3,6 +3,7 @@ import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
 import Product from './Product';
+import { products } from '../../assets/data/data';
 
 
 const Portfolio = () => {
@@ -17,17 +18,19 @@ const Portfolio = () => {
     return (
         <>
             <div className='container portfolio-page'>
-                <h1 className='page-title'>
-                    <AnimatedLetters
-                        letterClass={letterClass}
-                        strArray={"Portfolio".split("")}
-                        idx={15}
-                    />
-                </h1>
+                <div className='text-zone'>
+                    <h1 className='page-title'>
+                        <AnimatedLetters
+                            letterClass={letterClass}
+                            strArray={"Portfolio".split("")}
+                            idx={15}
+                        />
+                    </h1>
+                </div>
                 <div className='projects'>
-                    <Product />
-                    <Product />
-                    <Product />
+                    {products.map((item) => (
+                        <Product img={item.img} key={item.id} link={item.link} />
+                    ))}
                 </div>
             </div>
             <Loader type="cube-transition" />
