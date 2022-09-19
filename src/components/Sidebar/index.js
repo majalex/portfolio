@@ -1,7 +1,6 @@
 import './index.scss';
 import { Link, NavLink } from 'react-router-dom';
 import LogoA from '../../assets/images/logo-solid-A.svg'
-import Aleksander from '../../assets/images/Aleksander-w.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faClose, faEnvelope, faHome, faSuitcase, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
@@ -14,29 +13,28 @@ const Sidebar = () => {
     return (
 
         <div className='nav-bar'>
-            <Link className='logo' to='/'>
+            <Link className='logo' to='/portfolio/'>
                 <img src={LogoA} alt="logo" />
-                <img className="sub-logo" src={Aleksander} alt="Alex" />
             </Link>
             <nav className={showNav ? 'mobile-show' : ''}>
                 <NavLink 
                 onClick={() => setShowNav (false)}
-                exact="true" activeclassname="active" to="/">
+                exact="true" activeclassname="active" to="/portfolio/">
                     <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
                 </NavLink>
                 <NavLink 
                 onClick={() => setShowNav (false)}
-                exact="true" activeclassname="active" className="about-link" to="/about">
+                exact="true" activeclassname="active" className="about-link" to="/portfolio/about">
                     <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
                 </NavLink>
                 <NavLink
                 onClick={() => setShowNav (false)}
-                exact="true" activeclassname="active" className="portfolio-link" to="/portfolio">
+                exact="true" activeclassname="active" className="portfolio-link" to="/portfolio/projects">
                     <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
                 </NavLink>
                 <NavLink 
                 onClick={() => setShowNav (false)}
-                exact="true" activeclassname="active" className="contact-link" to="/contact">
+                exact="true" activeclassname="active" className="contact-link" to="/portfolio/contact">
                     <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
                 </NavLink>
                 <FontAwesomeIcon

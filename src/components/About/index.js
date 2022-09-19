@@ -3,7 +3,6 @@ import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBootstrap, faCss3, faGithub, faHtml5, faJsSquare, faReact } from "@fortawesome/free-brands-svg-icons"
-import Loader from 'react-loaders'
 
 
 const About = () => {
@@ -56,7 +55,6 @@ const About = () => {
 
                 </div>
         </div>
-        <Loader type="cube-transition"/>
         </>
     )
 }

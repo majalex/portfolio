@@ -1,4 +1,3 @@
-import Loader from 'react-loaders';
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
@@ -33,7 +32,6 @@ const Portfolio = () => {
                     ))}
                 </div>
             </div>
-            <Loader type="cube-transition" />
         </>
     )
 

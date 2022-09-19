@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import Loader from 'react-loaders';
 import { Link } from 'react-router-dom'
 import LogoA from '../../assets/images/logo-solid-A.svg'
 import AnimatedLetters from '../AnimatedLetters';
@@ -40,11 +39,10 @@ const Home = () => {
                             strArray={jobArray}
                             idx={22} />
                     </h1>
-                    <h2>Junior Frontend Developer / Java Script / ReactJS</h2>
-                    <Link to="/contact" className='flat-button'>CONTACT ME</Link>
+                    <h2>Junior Frontend Developer / ReactJS / JS</h2>
+                    <Link to="/portfolio/contact/" className='flat-button'>CONTACT ME</Link>
                 </div>
             </div>
-            <Loader type="cube-transition" />
         </>
     )
 }

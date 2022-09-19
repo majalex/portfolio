@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import Loader from 'react-loaders'
 import { MapContainer, TileLayer, Marker} from 'react-leaflet'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
@@ -102,7 +101,6 @@ const Contact = () => {
                     </MapContainer>
                 </div>
             </div>
-            <Loader type="cube-transition" />
         </>
     )
 }
